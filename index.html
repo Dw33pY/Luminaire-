@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINAIRE | Luxury Interior Design</title>
+    <link rel="stylesheet" href="luminaire.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.3.4/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+    <!-- Gold Particle Background -->
+    <div id="gold-particles"></div>
+
+    <!-- Luxury Cursor -->
+    <div class="luxury-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Navigation -->
+    <nav class="luxury-nav">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">LUMINAIRE</a>
+            
+            <div class="nav-links">
+                <a href="#showcase" class="nav-link">Showcase</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="luxury-btn">
+                    <i class="fas fa-calendar"></i>
+                    Book Consultation
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="luxury-hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-subtitle">SINCE 1998</div>
+            <h1 class="hero-title">
+                Redefining
+                <span>Luxury Living</span>
+            </h1>
+            <p class="hero-description">
+                We craft timeless interiors that blend architectural excellence with bespoke design, 
+                creating spaces that inspire and endure through generations.
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="250">0</span>
+                    <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="40">0</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="98">0</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Room Showcase -->
+    <section class="room-showcase" id="showcase">
+        <h2 class="showcase-title">Immersive Design</h2>
+        <div class="room-container">
+            <div class="room-visual">
+                <div class="room-canvas" id="room3d"></div>
+            </div>
+            <div class="room-info">
+                <h3 class="room-name">Azure Penthouse</h3>
+                <p class="room-description">
+                    A breathtaking 360° view penthouse featuring custom Italian marble finishes, 
+                    smart home integration, and bespoke furniture pieces curated from around the world.
+                </p>
+                <ul class="room-features">
+                    <li>Custom Italian Marble Flooring</li>
+                    <li>Smart Home Automation System</li>
+                    <li>Bespoke Crystal Chandelier</li>
+                    <li>Handcrafted Wood Paneling</li>
+                    <li>Climate Controlled Wine Cellar</li>
+                </ul>
+                <button class="luxury-btn">
+                    <i class="fas fa-expand"></i>
+                    Explore Virtual Tour
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="portfolio-header">
+            <h2 class="portfolio-title">Signature Projects</h2>
+            <p class="portfolio-subtitle">Where Vision Meets Perfection</p>
+        </div>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1615529328331-f8917597711f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Modern Villa" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category">Residential</span>
+                    <h3 class="portfolio-name">Beverly Hills Villa</h3>
+                    <p class="portfolio-location">Los Angeles, California</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Luxury Penthouse" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category">Penthouse</span>
+                    <h3 class="portfolio-name">Manhattan Skyline</h3>
+                    <p class="portfolio-location">New York, NY</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Modern Kitchen" class="portfolio-img">
+                <div class="portfolio-overlay">
+                    <span class="portfolio-category">Kitchen Design</span>
+                    <h3 class="portfolio-name">Milanese Culinary</h3>
+                    <p class="portfolio-location">Milan, Italy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="services-container">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <h3 class="service-title">Residential Design</h3>
+                <p class="service-description">
+                    Complete home transformation from concept to completion, 
+                    creating personalized living spaces that reflect your lifestyle.
+                </p>
+                <button class="luxury-btn">Explore</button>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3 class="service-title">Commercial Spaces</h3>
+                <p class="service-description">
+                    Luxury office designs, hospitality venues, and retail spaces 
+                    that enhance brand identity and customer experience.
+                </p>
+                <button class="luxury-btn">Explore</button>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-paint-roller"></i>
+                </div>
+                <h3 class="service-title">Bespoke Interiors</h3>
+                <p class="service-description">
+                    Custom furniture, lighting, and decor pieces handcrafted 
+                    by master artisans to create truly unique spaces.
+                </p>
+                <button class="luxury-btn">Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="contact-title">Begin Your <span>Design Journey</span></h2>
+                <p class="contact-description">
+                    Schedule a consultation with our design directors to discuss 
+                    your vision and explore possibilities for your space.
+                </p>
+                
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <div class="detail-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="detail-text">
+                            <h4>Contact Us</h4>
+                            <p>+1 (888) 888-8888</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <div class="detail-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="detail-text">
+                            <h4>Email</h4>
+                            <p>design@luminaire.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="detail-text">
+                            <h4>Studio Location</h4>
+                            <p>888 Madison Avenue, New York, NY 10021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3 class="form-title">Schedule Consultation</h3>
+                <form id="consultationForm">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label class="form-label" for="name">Full Name</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label class="form-label" for="email">Email Address</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="tel" id="phone" required>
+                        <label class="form-label" for="phone">Phone Number</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <select id="projectType" required>
+                            <option value="" disabled selected></option>
+                            <option value="residential">Residential Design</option>
+                            <option value="commercial">Commercial Space</option>
+                            <option value="hospitality">Hospitality</option>
+                            <option value="bespoke">Bespoke Interiors</option>
+                        </select>
+                        <label class="form-label" for="projectType">Project Type</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required></textarea>
+                        <label class="form-label" for="message">Project Details</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Request Consultation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="luxury-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">LUMINAIRE</div>
+                    <p class="footer-description">
+                        Creating timeless interiors that redefine luxury living 
+                        through innovative design and unparalleled craftsmanship.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Design Services</h4>
+                    <a href="#">Residential Design</a>
+                    <a href="#">Commercial Spaces</a>
+                    <a href="#">Hospitality Design</a>
+                    <a href="#">Bespoke Interiors</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Studio</h4>
+                    <a href="#">Our Philosophy</a>
+                    <a href="#">Design Team</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <a href="#">Design Journal</a>
+                    <a href="#">Virtual Tours</a>
+                    <a href="#">Client Stories</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 LUMINAIRE Interior Design. All rights reserved. | Luxury redefined since 1998.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="luminaire.js"></script>
+</body>
+  </html>
